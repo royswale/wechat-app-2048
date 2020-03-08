@@ -95,6 +95,7 @@ Page({
       //merge first
       for (var j = 0; j < 3; j++) {
         if (arr[i][j] == 0) continue;
+        // 找到这个单元格右边第一个非零数，如果相等先相加再break，如果不相等直接break
         for (var k = 1; k < 4 - j; k++) {
           if (arr[i][j] != 0 && arr[i][j + k] != 0) {
             if (arr[i][j] != arr[i][j + k]) break;   //不相同则直接跳过
@@ -114,7 +115,9 @@ Page({
       //movemove
       for (var j = 0; j < 3; j++) {
         if (arr[i][j] == 0) {
+          // 如果该单元格为 0
           for (var k = 1; k < 4 - j; k++) {
+            // 那么把它右边的第一个非零值交换过来
             if (arr[i][j + k] != 0) {
               arr[i][j] = arr[i][j + k];
               arr[i][j + k] = 0;
