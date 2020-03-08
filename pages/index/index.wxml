@@ -8,8 +8,8 @@
   </view>
 
   <view class="bc_cavas">
-    <view class="bc" wx:for="{{numbers}}" wx:for-item="row">
-      <view wx:for="{{row}}" class="bc_ bc_{{item}}"> {{item}} </view>
+    <view class="bc" wx:for="{{numbers}}" wx:for-item="row" wx:for-index="rowIndex" wx:key="rowIndex">
+      <view wx:for="{{row}}" class="bc_ bc_{{item}}" wx:for-index="columnIndex" wx:key="{{rowIndex}}-{{columnIndex}}"> {{item}} </view>
     </view>
   </view>
   <view class="intro">↑ ↓ ← → 使得某个数字累加到2048</view>
