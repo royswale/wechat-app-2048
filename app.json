@@ -1,11 +1,11 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "black",
-    "navigationBarTitleText": "2048小游戏",
-    "enablePullDownRefresh":"true"
-  }
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "2048小游戏"
+  },
+  "sitemapLocation": "sitemap.json"
 }

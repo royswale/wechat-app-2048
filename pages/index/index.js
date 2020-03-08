@@ -22,8 +22,8 @@ Page({
       })
   },
   onPullDownRefresh:function(){
-    this.mergebottom();
-    wx.stopPullDownRefresh();
+    // this.mergebottom();
+    // wx.stopPullDownRefresh();
   },
   storeScore:function(){
       console.log(this.data.maxscore, this.data.score)
