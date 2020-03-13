@@ -48,6 +48,10 @@ Page({
     })
   },
   tapEnd: function (event) {
+    this.setData({
+      endx: event.changedTouches[0].pageX,
+      endy: event.changedTouches[0].pageY
+    })
     var heng = (this.data.endx) ? (this.data.endx - this.data.startx) : 0;
     var shu = (this.data.endy) ? (this.data.endy - this.data.starty) : 0;
     console.log(heng, shu);
