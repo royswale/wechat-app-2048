@@ -11,6 +11,7 @@ Page({
     endy: 0,
     direction: '',
     numbers: [[0, 0, 2, 2], [0, 2, 4, 0], [0, 4, 0, 0], [0, 0, 0, 0]],
+    // numbers: [[0, 2, 4, 8], [16, 32, 64, 128], [256, 512, 1024, 2048], [0, 0, 0, 0]],
     modalHidden: true,
   },
   onLoad: function () {
